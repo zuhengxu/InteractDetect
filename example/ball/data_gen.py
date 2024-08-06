@@ -1,4 +1,4 @@
-# The following code is adapted from code source with the following license:
+# The following code is adapted from https://github.com/facebookresearch/CausalRepID with the following license:
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 
 import os
