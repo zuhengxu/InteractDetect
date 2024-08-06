@@ -1,4 +1,6 @@
+# The following code is adapted from code source with the following license:
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+
 import os
 from typing import Callable, Optional
 

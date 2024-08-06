@@ -2,30 +2,13 @@ import torch
 from torch import nn
 from inference.CausalIndep.klestimator.neuralratio import CondNeuralRatioScore, LogDensityRatioEstimator
 
-# copy from https://github.com/xijohnny/matching/blob/main/matching/models/encoders.py
 class ImageEncoder(torch.nn.Module):
     def __init__(self, latent_dim):
         super(ImageEncoder, self).__init__()        
         
         self.latent_dim = latent_dim
 
-        ### This image encoder is from https://github.com/facebookresearch/CausalRepID
-
-        # self.width = min(latent_dim * 4, 256)
-        
-        # self.base_model = resnet18(pretrained=True)        
-        # self.feat_layers= list(self.base_model.children())[:-1]
-        # self.feat_net= nn.Sequential(*self.feat_layers)
-
-        # self.fc_layers= [                    
-        #             nn.Linear(512, self.width),
-        #             nn.LeakyReLU(),
-        #             nn.Linear(self.width, self.latent_dim),
-        #         ] 
-        # self.fc_net = nn.Sequential(*self.fc_layers)
-
         ## Image encoder from https://github.com/uhlerlab/cross-modal-autoencoders
-
         modules = []
         hidden_dims = [32, 64, 128, 256, 512]
         in_channels = 3
