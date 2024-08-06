@@ -1,5 +1,6 @@
-# The following code is adapted from https://github.com/facebookresearch/CausalRepID with the following license:
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+############################################
+# The following code is adapted from https://github.com/facebookresearch/CausalRepID/blob/main/data/balls_dataset.py
+############################################
 
 import os
 from typing import Callable, Optional
